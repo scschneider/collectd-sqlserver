@@ -6,6 +6,7 @@ RUN apt-get update &&\
     apt-get -y install collectd &&\
     apt-get -y install libdbd-freetds
     
+ENV SQL_HOSTNAME empty
 ENV SQL_USERNAME sa 
 ENV SQL_PASSWORD nopass
 
