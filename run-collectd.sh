@@ -1,6 +1,7 @@
 #!//bin/bash
 
 cp /etc/collectd/collectd-template.conf /etc/collectd/collectd.conf
+sed -i'' -e "s/##SQL_POLL_INTERVAL##/${SQL_POLL_INTERVAL}/" /etc/collectd/collectd.conf
 sed -i'' -e "s/##SQL_HOSTNAME##/${SQL_HOSTNAME}/" /etc/collectd/collectd.conf
 sed -i'' -e "s/##SQL_USERNAME##/${SQL_USERNAME}/" /etc/collectd/collectd.conf
 sed -i'' -e "s/##SQL_PASSWORD##/${SQL_PASSWORD}/" /etc/collectd/collectd.conf
