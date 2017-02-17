@@ -14,7 +14,7 @@ ENV GRAPHITE_SERVER  127.0.0.1
 ENV GRAPHITE_PORT 2003
 
 ADD collectd.conf /etc/collectd/collectd-template.conf
-ADD processes.so /usr/lib/collectd
+#ADD processes.so /usr/lib/collectd
 
 RUN mkdir -p /etc/service/collectd
 ADD run-collectd.sh /etc/service/collectd/run
